@@ -8,7 +8,15 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "types": [
+      "@wdio/globals/types", 
+      "@wdio/cucumber-framework"
+    ]
   },
-  "include": ["./features/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
