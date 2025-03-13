@@ -63,4 +63,12 @@ exports.config = {
         strict: true,
         timeout: 60000,
     },
+    services: [
+        ['appium', {
+            command: 'appium',
+            args: {
+                allowInsecure: 'chromedriver_autodownload',
+            }
+        }]
+    ],
 };
