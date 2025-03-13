@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Test project for installation all dependecies for mobile testing",
   "scripts": {
-    "test": "template-test-run"
+    "run_appium_server": "appium --allow-insecure chromedriver_autodownload",
+    "test": "cross-env TYPE=web wdio wdio.conf.js"
   },
   "author": "Kseniia Leus",
   "license": "UNLICENSED",
@@ -21,6 +22,7 @@
     "@wdio/spec-reporter": "^9.11.0",
     "appium": "^2.16.2",
     "appium-uiautomator2-driver": "^4.1.0",
+    "cross-env": "^7.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
