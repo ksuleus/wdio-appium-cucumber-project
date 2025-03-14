@@ -18,7 +18,6 @@ let appiumCapabilities = {
     'appium:platformVersion': '11.0',
     'appium:deviceName': 'Pixel (2)', 
     'appium:automationName': 'UiAutomator2',
-    'appium:ignoreHiddenApiPolicyError': true,
 };
 
 if (isNative()) {
