@@ -1,8 +1,10 @@
 import { When } from '@wdio/cucumber-framework';
+import Header from '../elements/header';
 
 When('I open YouTube in browser', async () => {
     await browser.url(`https://www.youtube.com/`);
 });
 
-//Placeholder step: this step is reserved for verification native app test run.
-When('I open native YouTube application', async () => { });
+When('YouTube logo is visible', async () => {
+    expect(await Header.isLogoVisible()).toBe(true);
+ });
