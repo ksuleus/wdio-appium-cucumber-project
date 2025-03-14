@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Test project for installation all dependecies for mobile testing",
   "scripts": {
-    "run_appium_server": "appium --allow-insecure chromedriver_autodownload",
-    "test": "cross-env TYPE=web wdio wdio.conf.js"
+    "run-appium-server": "appium --allow-insecure chromedriver_autodownload --allow-cors",
+    "test-web": "cross-env TYPE=web wdio wdio.conf.js",
+    "test-native": "cross-env TYPE=native wdio wdio.conf.js"
   },
   "author": "Kseniia Leus",
   "license": "UNLICENSED",
